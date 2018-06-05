@@ -10,7 +10,12 @@
                 sticky: true,
                 renotify: false
             })
-            
+
+            notification.onclick = function() {
+                text.innerHTML = '张小姐已于' + new Date().toTimeString().split(' ')[0] + '加你为好友！';
+                notification.close();    
+            };
+        
         }    
     }
     
